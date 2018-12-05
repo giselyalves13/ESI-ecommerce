@@ -5,9 +5,11 @@ one:
   brand: MyString
   category: MyString
   price: MyString
+  amount: 
 
 two:
   title: MyString
   brand: MyString
   category: MyString
   price: MyString
+  amount: 

@@ -14,6 +14,7 @@ class ProdutosTest < ApplicationSystemTestCase
     visit produtos_url
     click_on "New Produto"
 
+    fill_in "Amount", with: @produto.amount
     fill_in "Brand", with: @produto.brand
     fill_in "Category", with: @produto.category
     fill_in "Price", with: @produto.price
@@ -28,6 +29,7 @@ class ProdutosTest < ApplicationSystemTestCase
     visit produtos_url
     click_on "Edit", match: :first
 
+    fill_in "Amount", with: @produto.amount
     fill_in "Brand", with: @produto.brand
     fill_in "Category", with: @produto.category
     fill_in "Price", with: @produto.price
