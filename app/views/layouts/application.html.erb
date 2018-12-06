@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EcommerceEsi</title>
+    <title>E-commerce</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,24 @@
   </head>
 
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          <h1><%= link_to "E-commerce", root_path %></h1>
+        </div>
+        <div class="col-xs-3" style="margin-top:30px;">
+          <%= link_to "Produtos", root_path %>
+        </div>
+        <div class="col-xs-3" style="margin-top:30px;">
+          Carrinho
+        </div>
+        <div class="col-xs-3" style="margin-top:30px;">
+          Login/Logout
+        </div>
+      </div>
+    </div>
+    <hr>
+
     <%= yield %>
   </body>
 </html>
