@@ -1,29 +1,17 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @produto.title %>
-</p>
-
-<p>
-  <strong>Brand:</strong>
-  <%= @produto.brand %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @produto.category %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @produto.price %>
-</p>
-
-<p>
-  <strong>Amount:</strong>
-  <%= @produto.amount %>
-</p>
-
-<%= link_to 'Edit', edit_produto_path(@produto) %> |
-<%= link_to 'Back', produtos_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <%= image_tag("download.png", :alt => "rss feed", width:200) %><br>
+    </div>
+    <div class="col-x2-8">
+      <h2><%= @produto.title %></h2>
+      <h3 style="color:blue;"><%= @produto.price %></h3><br>
+      <b>Marca: </b><%= @produto.brand %><br>
+      <b>Categoria: </b><%= @produto.category %><br>
+      <b>Quantidade disponível: </b><%= @produto.amount %>
+    </div>
+  </div>
+</div>
+<%= link_to 'Editar', edit_produto_path(@produto) %> |
+<%= link_to 'Voltar', produtos_path %>
